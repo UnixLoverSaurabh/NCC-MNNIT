@@ -1,0 +1,133 @@
+.main-slider-block { margin:30px auto; max-width:1000px; }
+h1 { margin-bottom:30px; text-align:center;}
+
+#box:before, #box:after {
+  z-index: -1; 
+  position: absolute; 
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%; 
+  top: 80%;
+  max-width:300px;
+  background: rgba(0, 0, 0, 0.7); 
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+  transform: rotate(-3deg);
+}
+
+#box:after {
+  transform: rotate(3deg);
+  right: 10px;
+  left: auto;
+}
+
+
+.block01{width: 100%; height: 100%;  overflow: hidden; /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4df5b+0,41dcea+39 */
+background: rgb(180,223,91); /* Old browsers */
+background: -moz-linear-gradient(45deg, rgba(180,223,91,1) 0%, rgba(65,220,234,1) 39%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, rgba(180,223,91,1) 0%,rgba(65,220,234,1) 39%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, rgba(180,223,91,1) 0%,rgba(65,220,234,1) 39%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4df5b', endColorstr='#41dcea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ border-radius: 3px; padding: 20px;}
+
+.block01 h2{font-family: 'Raleway', sans-serif; color: #000;}
+.block01 h2 b{font-family: 'Bree Serif', serif;
+}
+.block01 p {font-size: 14px; line-height: 25px; text-align: justify; 
+
+    font-family: 'Oxygen', sans-serif !important; color: #000 !important;
+
+} 
+
+.block01 p a{color: #000 !important}
+
+.block02{width: 100%; 
+
+    font-family: 'Raleway', sans-serif; color: #fff;
+ padding: 20px; height: 100%; overflow: hidden; background-image: linear-gradient(45deg,#96BF0D 0,#F18E00 25%,#E4312C 67%,#C3004A 100%); border-radius: 3px;}
+.block02 h2{ font-size: 20px; margin-top: 0px; padding-top: 0px; }
+
+.block02 h2 b{font-size: 23px; color: #000; font-weight: bold;}
+.block03{width: 100%; 
+
+    font-family: 'Raleway', sans-serif; color: #fff;
+
+ padding: 20px; height: 100%; overflow: hidden; background-image: linear-gradient(45deg,#005192 0,#008bc5 100%);  border-radius: 3px;}
+
+.block03 h2{font-family: 'Raleway', sans-serif; color: #ccc; font-size: 33px;}
+.block03 h2 b{font-family: 'Bree Serif', serif;
+}
+
+
+.block04{width: 100%; height: 100%; overflow: hidden; /*  use to edit this gradient: http://colorzilla.com/gradient-editor/#c3d9ff+0,b1c8ef+41,98b0d9+100;Lavender+3D */
+background: #c3d9ff; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #c3d9ff 0%, #b1c8ef 41%, #98b0d9 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #c3d9ff 0%,#b1c8ef 41%,#98b0d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3d9ff', endColorstr='#98b0d9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */ border-radius: 3px;}
+
+.block04 h2{font-family: 'Raleway', sans-serif; color: #000; font-size: 33px;}
+.block04 h2 b{font-family: 'Bree Serif', serif;
+}
+
+.block04 p {font-size: 14px; line-height: 25px; text-align: justify; 
+
+    font-family: 'Oxygen', sans-serif !important; color: #000 !important;
+
+}
+
+.block04 p a{color: #000 !important}
+
+.block05{width: 100%; height: 100%; overflow: hidden; background-image: linear-gradient(45deg,#005192 0,#008bc5 100%); border-radius: 3px;}
+
+
+.block05 h2{font-family: 'Raleway', sans-serif; color: #fff; font-size: 33px;}
+.block05 h2 b{font-family: 'Bree Serif', serif;
+}
+
+.block05 p {font-size: 14px; line-height: 25px; text-align: justify; 
+
+    font-family: 'Oxygen', sans-serif !important; color: #fff !important;
+
+}
+
+.block05 p a{color: #000 !important}
+
+
+@media(max-width: 767px){
+.mob-view-slider{display: block !important; margin: 10px;}
+.mob-view-slider1{display: none !important;}
+.logo-card{width:200px !important;}
+.bar-top-space{margin-top: 250px; height: 200px; }
+.navbar-collapse img{display: none !important}
+.footer{margin-top: 200px;}
+.bar-circle {
+  display: block;
+  margin: 0.5em auto;
+}
+.shadow{ display: none; }
+.no01-content img{width: 70%;}
+.no02-content img{width: 70%;}
+.no03-content img{width: 70%;}
+
+   }
+
+@media(min-width: 360px) and (max-width: 384px){
+.mob-view-slider{margin-left: 8% !important;}
+.footer{margin-top: 200px;}
+.block01{width: 100% !important;}
+.footer i{  padding:4px 5px; border-radius: 50%; width: 20px; height: 20px; font-size: 11px;  }
+.footer b{ font-size: 12px; }
+ }
+
+ @media(min-width: 384px) and (max-width: 384px){
+    .mob-view-slider{margin-left: 20% !important;}
+  }
+
+@media(min-width: 768px){
+.mob-view-slider{display: none !important;}
+.mob-view-slider1{display: block !important;}
+   }
+
+   .logo-card{width:350px; padding-top: 10px;}
+
+   .bar-top-space{position: fixed; top:280; margin-left: 0%;}

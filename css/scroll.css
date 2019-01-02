@@ -1,0 +1,66 @@
+/*This is for broadcast.php , joined.php and admin.php 
+*/
+
+#div1 {
+        color: red; 
+        max-width: 30%; 
+        margin: 0px auto; 
+        background:linear-gradient(#1308f8,#3db2f9,#398fe1,#08f8ed,#080cf8);
+        text-align: left;
+        border: 1px solid #B0C4DE;
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;  
+        padding: 10px;
+    }
+
+prescroll {
+  padding: 8.5px;
+  margin: 0 0 9px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+div.output_scroll {
+  height: 38em;
+  width: 100%;
+  overflow: auto;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+  display: block;
+}
+
+.next_line_word{
+  max-width:500px;
+  word-wrap:break-word;
+}
+
+@media only screen and (min-width:480px) and (max-width:767px) {
+.next_line_word{
+  max-width:350px;
+  word-wrap:break-word;
+}
+}
+
+/*Mobile view*/
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+.next_line_word{
+  max-width:300px;
+  word-wrap:break-word;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.next_line_word{
+  max-width:400px;
+  word-wrap:break-word;
+}
+}
+
+@media only screen and (max-width:319px) {
+.next_line_word{
+  max-width:350px;
+  word-wrap:break-word;
+}
+}
