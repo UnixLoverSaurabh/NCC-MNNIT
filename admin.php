@@ -197,11 +197,23 @@
                                     if ($_SESSION["username"] === 'Admin')
                                     {
                                         ?>
+
                                         <form action="server.php" method="post">
                                             <input type="hidden" name="eventId" <?php echo "value='".$row["event_id"]."'" ?> >
-                                            <button type="submit" name="approve1" class="btn btn-primary btn-md">Approve</button>
-                                            <button type="submit" name="discard1" class="btn btn-danger btn-md">Discard</button>                                     
+                                            <?php
+				                                if ($row["status1"] == "Approved") {
+				                            ?>    	
+				                                <button type="submit" name="discard1" class="btn btn-danger btn-md">Discard</button>
+				                            <?php
+				                                }
+				                                else {
+				                            ?>
+				                                	<button type="submit" name="approve1" class="btn btn-primary btn-md">Approve</button>
+				                            <?php
+				                                }
+				                            ?>                                     
                                         </form>
+
                                         <?php
                                     }
                                     else
