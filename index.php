@@ -28,7 +28,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/nprogress.css" rel="stylesheet">
     <link href="css/custom.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="css/notification.css">
     <style>
 		body {
 		    background-image: url("img/fam.jpg");
@@ -82,7 +82,6 @@
                 <!-- sidebar menu -->
                 <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                     <div class="menu_section">
-                        <h3>General</h3>
                         <ul class="nav side-menu">
                             <li><a href="index.php"><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a></li>
                             <li data-toggle="modal" data-target="#add_blog_modal"><a>
@@ -128,14 +127,18 @@
                             </ul>
                         </li>
 
-                        <li role="presentation" class="dropdown">
-                            <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown"
-                               aria-expanded="false">
-                                <i class="fa fa-bell-o fa-lg" style="font-size:26px"></i>
-                                <span class="badge bg-green">6</span>
-                            </a>
 
+                        <li>
+                            <div id="noti_Button" class="fa fa-bell-o" style="font-size:26px">
+                                <span class="badge bg-green" id="noti_Counter">6</span>
+                            </div>    
+                            <div id="notifications">
+                                <h3 id="notificationsShade">Notifications</h3>
+                                <div style="height:300px;"></div>
+                                <div class="seeAll"><a href="#">See All</a></div>
+                            </div>
                         </li>
+
                     </ul>
                 </nav>
             </div>
@@ -145,151 +148,10 @@
 
         <!-- page content area main -->
         <div class="right_col" role="main">
-                <div class="page-title">
-                <br><br>
-                <br><br>
-                <br><br>    
-                <!--- Mobile view--> 
-                <div class="mob-view-slider">
-                    <div class="pictureSlider lft-space  poster-main" data-setting='{
-                                                                                        "width":300,
-                                                                                        "height":370,
-                                                                                        "posterWidth":310,
-                                                                                        "posterHeight":370,
-                                                                                        "scale":0.8,
-                                                                                        "autoPlay":true,
-                                                                                        "delay":2000,
-                                                                                        "speed":300
-                                                              }'>                                          
-                        <div class="poster-btn poster-prev-btn"></div>
-                            <ul class="poster-list">
-
-                                <li class="poster-item">
-                                    <a href="about.html" title="ITH Technologies" style="text-decoration: none;">
-                                        <div align="center" id="box" class="block02"><img src="img/nccFlag2.png " class="logo-card"><br><br>
-                                            <h2>In 1954 the existing tricolour flag was introduced.<B>The three colours in the flag depict the three services of the Corps, red for the Army, deep blue for the Navy and light blue for the Air Force.</B></h2>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="poster-item">
-                                    <a href="blockchain.html">
-                                        <div id="box" class="block01">
-                                            <div class="col-md-8 col-sm-12"><img width="100%" class="mob-view-slider1" src="img/RajpathNCC2.jpg"></div>
-                                            <div class="col-md-4 col-sm-12"><h2>The ‘Aims’ of the NCC laid out in 1988 <B>The NCC aims at developing character, comradeship, discipline, a secular outlook, the spirit of adventure and ideals of selfless service amongst young citizens.</B></h2>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                    
-                                <li class="poster-item">
-                                    <a href="services.html">
-                                        <div id="box" class="block03"> 
-                                            <div class="col-md-6 col-sm-12"><h2 ><b>National Cadet Corps came into being by an Act of the Parliament Act No. XXXI of 1948 designated 'The National Cadet Corps Act 1948'.</b></h2>
-                                            <p>NCC which has now 13 lakh cadets on its rolls, had started with 20,000 cadets in 1948.</p>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12"><br><img width="100%" class="mob-view-slider1" src="img/nccAward.png" width="600"></div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="poster-item">
-                                    <a href="services.html" >
-                                        <div id="box" class="block04"> 
-                                            <div class="col-md-8 col-sm-12"><br><img width="100%" class="mob-view-slider1" src="img/modiNCC2.jpg"></div>
-                                            <div class="col-md-4 col-sm-12"><br><h2 >Motto of NCC<b> "Unity and Discipline"</b></h2>
-                                            <p> was taken in the 12th Central Advisory Committee (CAC) meeting held on 12 Oct 1980.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="poster-item">
-                                    <a href="services.html" >
-                                        <div id="box" class="block05"> 
-                                            <div class="col-md-9 col-sm-12"><br><br><img width="80%" class="mob-view-slider1" src="img/our2camp.jpg"></div>
-                                            <div class="col-md-3 col-sm-12"><h2 class="top50"><div style="text-align: center;" >Working with the best<b>@NCC #MNNIT</b></div></h2>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        <div class="poster-btn poster-next-btn"></div>
-                    </div>
-                </div>
-                <!-- Mobile View end-->
                 
-                <div class="container main-slider-block slideInUp">
 
-                    <div class="pictureSlider mob-view-slider1 poster-main" data-setting='{
-                                                                                            "width":1000,
-                                                                                            "height":370,
-                                                                                            "posterWidth":650,
-                                                                                            "posterHeight":370,
-                                                                                            "scale":0.8,
-                                                                                            "autoPlay":true,
-                                                                                            "delay":2000,
-                                                                                            "speed":400
-                                                                                            }'>                                          
-                        <div class="poster-btn poster-prev-btn"></div>
-                            <ul class="poster-list">
 
-                                <li class="poster-item">
-                                    <a href="about.html" title="ITH Technologies" style="text-decoration: none;">
-                                        <div align="center" id="box" class="block02"><img src="img/nccFlag2.png " class="logo-card"><br><br>
-                                            <h2>In 1954 the existing tricolour flag was introduced.<B>The three colours in the flag depict the three services of the Corps, red for the Army, deep blue for the Navy and light blue for the Air Force.</B></h2>
-                                        </div>
-                                    </a>
-                                </li>
 
-                                <li class="poster-item">
-                                    <a href="blockchain.html">
-                                        <div id="box" class="block01">
-                                            <div class="col-md-8 col-sm-12"><img width="100%" class="mob-view-slider1" src="img/RajpathNCC2.jpg"></div>
-                                            <div class="col-md-4 col-sm-12"><h2>The ‘Aims’ of the NCC laid out in 1988 <B>The NCC aims at developing character, comradeship, discipline, a secular outlook, the spirit of adventure and ideals of selfless service amongst young citizens.</B></h2>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                    
-                                <li class="poster-item">
-                                    <a href="services.html">
-                                        <div id="box" class="block03"> 
-                                            <div class="col-md-6 col-sm-12"><h2 ><b>National Cadet Corps came into being by an Act of the Parliament Act No. XXXI of 1948 designated 'The National Cadet Corps Act 1948'.</b></h2>
-                                            <p>NCC which has now 13 lakh cadets on its rolls, had started with 20,000 cadets in 1948.</p>
-                                            </div>
-                                            <div class="col-md-6 col-sm-12"><br><img width="100%" class="mob-view-slider1" src="img/nccAward.png" width="600"></div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="poster-item">
-                                    <a href="services.html" >
-                                        <div id="box" class="block04"> 
-                                            <div class="col-md-8 col-sm-12"><br><img width="100%" class="mob-view-slider1" src="img/modiNCC2.jpg"></div>
-                                            <div class="col-md-4 col-sm-12"><br><h2 >Motto of NCC<b> "Unity and Discipline"</b></h2>
-                                            <p> was taken in the 12th Central Advisory Committee (CAC) meeting held on 12 Oct 1980.</p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-
-                                <li class="poster-item">
-                                    <a href="services.html" >
-                                        <div id="box" class="block05"> 
-                                            <div class="col-md-9 col-sm-12"><br><br><img width="80%" class="mob-view-slider1" src="img/our2camp.jpg"></div>
-                                            <div class="col-md-3 col-sm-12"><h2 class="top50"><div style="text-align: center;" >Working with the best<b>@NCC #MNNIT</b></div></h2>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        <div class="poster-btn poster-next-btn"></div>
-                    </div>
-                </div>
-
-                    
-                </div>
                 <!-- notification message -->
                 <?php if (isset($_SESSION['success'])) : ?>
                     <div id="div1">
@@ -357,6 +219,21 @@
         Carousel.init($(".pictureSlider"));
     });
 </script>
+
+
+<!-- Notification section-->
+<script>
+    $(document).ready(function () {
+
+        $('#noti_Button').click(function () {
+            $('#notifications').fadeToggle('fast', 'linear');
+            $('#noti_Counter').fadeOut('slow'); return false;
+        });
+            
+        $('#notifications').click(function () { return false; });
+    });
+</script>
+
 <!-- jQuery -->
 <script src="js/jquery.min.js"></script>
 <!-- Bootstrap -->
