@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications Popup </title>
+	<meta https-equiv="Content-Type" content="text/html; charset=UTF-8" />		
+	<meta name="viewport" content="width=device-width" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    
+   <link rel="stylesheet" type="text/css" href="notification.css">
+</head>
+<body>
+    <noscript>
+    	<div style="width:100%;margin:0 auto;text-align:center;background-color:Yellow;">Please enable JavaScript to view this page properly.</div>
+    </noscript>
+    
+    <div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Find Friends</a></li>
+            <li id="noti_Container">
+                <div id="noti_Counter"></div>
+                <div id="noti_Button"></div>    
+                <div id="notifications">
+                    <h3>Notifications</h3>
+                    <div style="height:300px;"></div>
+                    <div class="seeAll"><a href="#">See All</a></div>
+                </div>
+            </li>
+            <li><a href="#">Messages</a></li>
+        </ul>
+    </div>
+    
+</body>
+	<script>
+		$(document).ready(function () {
+			$('#noti_Counter').css({ opacity: 0 }).text('7').css({ top: '-10px' }).animate({ top: '-2px', opacity: 1 }, 500); 	$('#noti_Button').click(function () {
+				$('#notifications').fadeToggle('fast', 'linear', function () {
+					if ($('#notifications').is(':hidden')) {
+						$('#noti_Button').css('background-color', '#2E467C');
+					}
+					else $('#noti_Button').css('background-color', '#FFF');
+				});
+				
+				$('#noti_Counter').fadeOut('slow'); return false;});
+				$(document).click(function () {
+					$('#notifications').hide();
+						if ($('#noti_Counter').is(':hidden')) {
+							$('#noti_Button').css('background-color', '#2E467C');
+						}
+				});
+				
+				$('#notifications').click(function () { return false; });
+		});
+	</script>
+</html>

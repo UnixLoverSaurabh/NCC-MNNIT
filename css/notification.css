@@ -1,0 +1,12 @@
+ul li a,ul li a:hover{text-decoration:none;cursor:pointer}
+#notifications{background:#FFF}
+
+#noti_Button{cursor:pointer}
+#notifications{display:none;width:375px;position:absolute;top:30px;right:0;border:1px solid rgba(100,100,100,.2);-webkit-box-shadow:0 3px 8px rgba(0,0,0,.2);z-index:0}
+#notifications:before{content:'';display:block;width:0;height:0;color:transparent;border:10px solid #CCC;border-color:transparent transparent #FFF;margin-top:-10px;margin-left:10px}
+#notificationsShade{color:#333;font:13px helvetica;font-weight:700;font-size:13px;font-style:normal;border-bottom:solid 1px rgba(100,100,100,.3)}
+
+.seeAll,h3{padding:8px}
+.seeAll{background:#F6F7F8;font-size:12px;font-weight:700;border-top:solid 1px rgba(100,100,100,.3);text-align:center}
+.seeAll a{color:#3b5998}
+.seeAll a:hover{background:#F6F7F8;color:#3b5998;text-decoration:underline;}
